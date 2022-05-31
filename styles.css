@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+--FuentePrincipal: 'Open Sans', sans-serif;
+--FuenteSecundaria: 'Poppins', sans-serif;
+--Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE */
+
+body {
+    font-family: var(--FuentePrincipal);
+    color: white;
+    background-color: var(--Violet);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+main {
+    width: 595px;
+    height: 1448px;
+    margin: 75px auto 40px;
+    
+}
+
+/* SECTION 1*/
+
+#section1 {
+    height: 724px;
+}
+#logo-conatiner {
+    width: 180px;
+
+}
+#mockup {
+    width: 595px;
+}
+
+
+/* SECTION 2*/
+
+#section2 {
+    height: 724px;
+}
+h1 {
+    font-family: var(--FuenteSecundaria);
+    font-size: 46px;
+    text-align: center;
+    height: 170px;
+}
+#section2 p {
+    font-size: 31px;
+    text-align: center;
+   height: 280px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 122px;
+}
+.button a {
+    width: 400px;
+    height: 86px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: var(--Violet);
+    text-decoration: none;
+    display: inline-block;
+    background-color: azure;
+    padding-top: 22px;
+}
+.button a:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+
+
+ .social-container {
+    text-align: center;
+ }
+ .redes {
+     width: 208px;
+     display: inline-flex;
+     justify-content: space-between;
+
+ }
+.redes a {
+    text-decoration: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    padding-top: 12px;
+
+}
+.redes a:hover {
+    border-color: var(--SoftMagenta);
+    color: var(--SoftMagenta);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Desktop */
+@media only screen and (min-width:1284px ) {
+    
+    body {
+        background-image: url(/images/bg-desktop.svg);
+    }
+
+  main {
+      margin: 60px auto 0px;
+      width: 1284px;
+      height: 700px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  /*   SECCION 1   */
+    #section1 {
+        width: 753px;
+        height: 700px;
+    }
+    #logo-container {
+        height: 134px;
+    }
+    #mockup {
+        width: 696px;
+    }
+
+    /* SECCION 2*/
+    #section2 {
+        height: 700px;
+    }
+    h1 {
+        margin-top: 165px;
+        height: 133px;
+        font-size: 39px;
+        text-align: left;
+        padding-right: 93px;
+    }
+    #section2 p {
+        height: 98px;
+        font-size: 18px;
+        text-align: left;
+        padding-right: 17px;
+    }
+    .button {
+        text-align: left;
+        margin-bottom: 179px;
+    }
+    .button a {
+        width: 200px;
+        height: 58px;
+        font-size: 20px;
+        padding-top: 14px;
+        text-align: center;
+    }
+    .social-container {
+        text-align: right;
+    }
+    .redes {
+        width: 156px;
+    }
+    .redes a {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+        padding-top: 8px;
+        text-align: center;
+    }
+}
